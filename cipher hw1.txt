@@ -1,0 +1,129 @@
+// NAme RAvi Prasad @11917141 gnail r2raviprasad@gmail.com
+import java.util.*;
+public class Main
+**************************//ques 1*******************************************************
+{
+	public static void main(String[] args) {
+		Scanner scn=new Scanner(System.in);
+	    int n=scn.nextInt();
+	    if(n%2==0){
+	        System.out.println(n+"  is Even ");
+	        
+	    }else{
+	        System.out.println(n+"  is odd");
+	    }
+**************************//ques 2**********************************************************
+	    int fibon=fibo(n);
+	    System.out.println("Fibonaci of "+n+" is "+fibon);
+	}
+	public static int fibo(int n){
+	    if(n==0 || n==1){
+	        return n;
+	    }
+	    int fibonm1=fibo(n-1);
+	    int fibonm2=fibo(n-2);
+	    int fibon=fibonm1+fibonm2;
+	    return fibon;
+	}
+}
+*********************//ques 3
+
+import java.util.*;
+public class Main
+{
+	public static void main(String[] args) {
+		Scanner scn=new Scanner(System.in);
+		int n=scn.nextInt();
+		int temp=n;
+		int val=0;
+		while(n>0){
+		    int rem=n%10;
+		    val=val+rem*rem*rem;
+		    n=n/10;
+		    
+		}
+		if(val==temp){
+		    System.out.println("Given no is armstrong");
+		}else{
+		    		    System.out.println("Not armstrong");
+
+		}
+
+	
+	}	
+}
+
+
+
+
+
+
+
+****************ques 5***************
+
+int n=scn.nextInt();
+System.out.println("Last digit is"+ n%10);
+
+	while(n>10){
+	n=n/10;
+	}
+System.out.println("First no is "+ n);
+
+
+
+
+******************************************// ques 6****************************
+i>****
+import java.util.*;
+
+public class Main {
+
+    public static void main(String[] args) {
+        Scanner scn = new Scanner(System.in);
+        int n = scn.nextInt();
+
+        for (int i = 1; i <= n; i++) {
+            for (int j = 1; j <= i; j++) {
+                System.out.print("*\t");
+            }
+            System.out.println();
+        }
+
+    }
+}
+2>****
+import java.util.*;
+
+ 
+public class Main
+{
+  
+ 
+public static void main (String[]args)
+  {
+    
+Scanner scn = new Scanner (System.in);
+    
+int n = scn.nextInt ();
+    
+ 
+for (int i = 1; i <= n; i++)
+      {
+	
+for (int j = n - 1; j >= i; j--)
+	  {
+	    
+System.out.print (" ");
+	
+ 
+} for (int k = i; k >= 1; k--)
+	  {
+	    
+System.out.print (k);
+
+}System.out.println(); 
+} 
+ 
+} 
+}
+
